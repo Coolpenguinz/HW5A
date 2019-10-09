@@ -11,9 +11,14 @@
 	Click Me!
 </button>
 </form>
+
+<p id="display"></p>
+<h1 id="result"></h1>
 	<script type="text/javascript">
 	function read_display(){
 		alert("in read_display");
+		document.getElementById("display").innerHTML = "";
+		document.getElementById("result").innerHTML = "";
 		var first_num = document.getElementById("num1").value;
 		var second_num = document.getElementById("num2").value;
 		alert("First number is " + first_num + " and second number is " + second_num);
