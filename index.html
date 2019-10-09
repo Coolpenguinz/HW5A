@@ -7,10 +7,10 @@
 	<input type="text" id = "num1" name="number1">
 	<input type="text" id = "num2" name="number2">
 </form>
-<button onclick="read_display()">
+<button type = "button" text = "Click Me!" onclick="read_display()">
 </button>
 	<script type="text/javascript">
-	function read_display() {
+	function read_display(){
 		var first_num = document.getElementById("num1").value;
 		var second_num = document.getElementById("num2").value;
 		alert("First number is " + first_num + " and second number is " + second_num);
@@ -19,12 +19,19 @@
 		}
 		else alert("isFactor doesnt work :(");
 	}
-	function isFactor(var number, var test_number) {
+	function isFactor(var number, var test_number){
 		if(number % test_number == 0) {
 			return true;
 		}
 		else return false;
-	}		
+	}	
+	function showFactors(array){
+		if(array instanceof Array) {
+			for(var i = 0; i < array.length; i++) {
+				document.write(" " + array[i]);
+			}
+		}
+	}	
 
 
 	</script>
